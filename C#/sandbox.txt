@@ -1,0 +1,36 @@
+Option 1: Use an Online C# Compiler / REPL
+
+You can run full C# code in your browser:
+
+.NET Fiddle – https://dotnetfiddle.net/
+Paste the entire LRU cache code.
+Click Run → output will appear below.
+Supports console apps, classes, and multi-file code (you can simulate multiple files in a single editor).
+JDoodle C# Online Compiler – https://www.jdoodle.com/csharp-online-compiler
+Paste code → Run → see console output.
+Repl.it / Replit – https://replit.com/languages/csharp
+Supports a persistent workspace, so you can save projects.
+Can simulate multi-file projects if you create multiple .cs files.
+
+These are ideal for live coding practice without installing anything locally.
+
+
+Option 2: Use VS Code Codespaces / GitHub Codespaces
+GitHub Codespaces is basically VS Code in the cloud.
+You can choose a container with .NET SDK preinstalled.
+No local installation needed, just a browser or local VS Code.
+You can run dotnet run directly in Codespaces terminal.
+
+
+Option 3: Use VS Code + Online Compiler Plugins (less common)
+There are extensions that allow you to run C# in online sandboxes from VS Code:
+Search VS Code Extensions for “Code Runner” or “.NET Fiddle Runner”.
+You can execute code snippets using an online compiler.
+Output appears in VS Code terminal.
+
+
+touch solution1.cs
+
+code solution1.cs
+
+dotnet run solution1.cs

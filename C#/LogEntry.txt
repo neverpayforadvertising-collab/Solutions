@@ -1,0 +1,23 @@
+Problem 2: Event-Driven Log Aggregator
+
+Description:
+Implement a real-time log aggregator that consumes logs from multiple sources and provides queries like GetTopN(level, lastXMinutes).
+
+Requirements:
+
+Logs arrive as a stream: (timestamp, level, message).
+Support concurrent insertion of logs.
+Query top N logs by frequency of a certain log level in the last X minutes.
+Optimize for both insertion and query performance.
+
+Why it’s senior-level:
+
+Tests stream processing, concurrent collections, time-window queries.
+Forces you to think about data structures for fast aggregation (like ConcurrentQueue, SortedList, or min-heaps).
+Mimics real-world backend problems in logging/monitoring pipelines.
+
+Hints:
+
+Use sliding window technique with a deque or sorted list.
+Store logs in a thread-safe structure for concurrent writes.
+Optimize query by maintaining aggregated counters instead of scanning all logs.

@@ -1,0 +1,22 @@
+Problem 1: Thread-Safe LRU Cache with Expiration
+
+Description:
+Design and implement a thread-safe LRU cache that supports expiration of entries. Each cache item should have its own time-to-live (TTL). Multiple threads may read/write concurrently.
+
+Requirements:
+
+Get(key) returns value if present and not expired; otherwise, returns null.
+Put(key, value, ttl) inserts/updates the cache.
+Evict least-recently-used item when capacity is exceeded.
+Thread-safe for concurrent Get and Put.
+
+Why it’s senior-level:
+
+Tests concurrency (lock, ReaderWriterLockSlim, ConcurrentDictionary).
+Requires combining LRU cache logic + TTL expiration.
+Real-world backend relevance: caching in APIs or microservices.
+
+Hints:
+
+Use ConcurrentDictionary<TKey, TValue> + LinkedList or SortedSet for recency.
+Use CancellationToken or background cleanup task for TTL expiration.
