@@ -10,8 +10,7 @@ Support concurrent insertion of logs.
 Query top N logs by frequency of a certain log level in the last X minutes.
 Optimize for both insertion and query performance.
 
-Why it’s senior-level:
-
+Desc:
 Tests stream processing, concurrent collections, time-window queries.
 Forces you to think about data structures for fast aggregation (like ConcurrentQueue, SortedList, or min-heaps).
 Mimics real-world backend problems in logging/monitoring pipelines.
