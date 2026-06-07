@@ -14,13 +14,11 @@ Can simulate multi-file projects if you create multiple .cs files.
 
 These are ideal for live coding practice without installing anything locally.
 
-
 Option 2: Use VS Code Codespaces / GitHub Codespaces
 GitHub Codespaces is basically VS Code in the cloud.
 You can choose a container with .NET SDK preinstalled.
 No local installation needed, just a browser or local VS Code.
 You can run dotnet run directly in Codespaces terminal.
-
 
 Option 3: Use VS Code + Online Compiler Plugins (less common)
 There are extensions that allow you to run C# in online sandboxes from VS Code:
