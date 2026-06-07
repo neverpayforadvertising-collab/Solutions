@@ -3,7 +3,6 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
-/// <summary>
 /// Thread-Safe Real-Time Log Aggregator
 /// Supports top-N queries within a sliding time window
 /// </summary>
