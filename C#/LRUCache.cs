@@ -1,11 +1,9 @@
-using System.Threading;
 
 /// Thread-Safe LRU Cache with TTL per entry.
 /// Key features:
 /// - Evicts least-recently-used item when capacity exceeds.
 /// - Each entry expires after a given TTL.
 /// - Safe for concurrent Get/Put operations.
-/// </summary>
 public class LRUCache<TKey, TValue>
 {
     private readonly int _capacity; // Maximum number of cache entries
