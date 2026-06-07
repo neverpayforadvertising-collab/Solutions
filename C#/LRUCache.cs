@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
 using System.Threading;
 
-/// <summary>
 /// Thread-Safe LRU Cache with TTL per entry.
 /// Key features:
 /// - Evicts least-recently-used item when capacity exceeds.
