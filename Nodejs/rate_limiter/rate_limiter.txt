@@ -1,0 +1,1 @@
+# Implement a simple in-memory rate limiter which allows max 5 requests per user per minute.
